@@ -71,14 +71,15 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+      backgroundColor: Colors.greenAccent,
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
       bottomNavigationBar: AwesomeBottomNavigationComponent(
-          [Icons.outlined_flag_outlined, Icons.access_alarm_outlined, Icons.person_outline],
-          [Icons.outlined_flag, Icons.access_alarm, Icons.person]),
+          const [Icons.star_outline, Icons.weekend_outlined, Icons.person_outline],
+          const [Icons.star, Icons.weekend_rounded, Icons.person_sharp]),
       body: Container(
         color: Colors.greenAccent,
       ),
