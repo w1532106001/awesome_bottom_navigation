@@ -79,7 +79,8 @@ class AwesomeBottomNavigationComponent extends StatelessWidget {
                                         : 36 - state.animValue * 8
                                     : 32,
                               ),
-                              visible: state.selectIndex.value != index,
+                              //todo 可见性问题
+                              visible: true,
                             ),
                             Visibility(
                               child: ClipOval(
@@ -93,7 +94,7 @@ class AwesomeBottomNavigationComponent extends StatelessWidget {
                                       : 32,
                                 ),
                                 clipper: IconClipper(
-                                    dx:16,
+                                    dx:logic.getDx(index),
                                     dy: 16),
                               ),
                               visible: state.selectIndex.value == index ||

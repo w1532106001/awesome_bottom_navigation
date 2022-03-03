@@ -101,7 +101,7 @@ class AwesomeBottomNavigationLogic extends GetxController
     var  dx = 0.0;
     if (state.touchIndex.value > state.startIndex.value) {
       if (state.startIndex.value == index) {
-        dx = state.animValue.value*16;
+        dx = state.animValue.value*16+16;
       }
       if (state.touchIndex.value == index) {
         dx = state.animValue.value*16;
@@ -109,12 +109,16 @@ class AwesomeBottomNavigationLogic extends GetxController
 
     } else {
       if (state.startIndex.value == index) {
-        dx = state.animValue.value*16;
+        dx = 16-state.animValue.value*16;
       }
       if (state.touchIndex.value == index) {
-        dx = state.animValue.value*16;
+        dx = 32-state.animValue.value*16;
       }
 
+    }
+
+    if(state.selectIndex.value==index&&state.animValue.value==0.0){
+      dx = 16;
     }
     return dx;
   }
