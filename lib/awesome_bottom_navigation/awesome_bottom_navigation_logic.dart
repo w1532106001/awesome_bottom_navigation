@@ -100,19 +100,21 @@ class AwesomeBottomNavigationLogic extends GetxController
   double getDx(index) {
     var  dx = 0.0;
     if (state.touchIndex.value > state.startIndex.value) {
-      if (state.touchIndex.value == index) {
-        dx = state.animValue.value*16;
-      }
       if (state.startIndex.value == index) {
         dx = state.animValue.value*16;
       }
+      if (state.touchIndex.value == index) {
+        dx = state.animValue.value*16;
+      }
+
     } else {
-      if (state.touchIndex.value == index) {
-        dx = state.animValue.value*16;
-      }
       if (state.startIndex.value == index) {
         dx = state.animValue.value*16;
       }
+      if (state.touchIndex.value == index) {
+        dx = state.animValue.value*16;
+      }
+
     }
     return dx;
   }

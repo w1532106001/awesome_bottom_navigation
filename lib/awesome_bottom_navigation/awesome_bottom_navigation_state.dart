@@ -10,7 +10,7 @@ class AwesomeBottomNavigationState {
   var endOff = const Offset(0, 0).obs;
   var animValue = 0.0.obs;
   var touchIndex = 0.obs;
-  var startIndex = 0.obs;
+  var startIndex = 1.obs;
   var topAnimValues = <double>[0.0,0.0,0.0].obs;
 
   AwesomeBottomNavigationState() {

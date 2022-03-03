@@ -93,9 +93,7 @@ class AwesomeBottomNavigationComponent extends StatelessWidget {
                                       : 32,
                                 ),
                                 clipper: IconClipper(
-                                    dx: state.startIndex.value == index
-                                        ? state.animValue * 32-16
-                                        : state.animValue * 32+16,
+                                    dx:16,
                                     dy: 16),
                               ),
                               visible: state.selectIndex.value == index ||
