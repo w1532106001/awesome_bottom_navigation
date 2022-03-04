@@ -12,7 +12,7 @@ class AwesomeBottomNavigationLogic extends GetxController
 
   var topPointController = <AnimationController>[].obs;
   var bottomPointController = <AnimationController>[].obs;
-  var totalTime = 800;
+  var totalTime = 500;
 
   @override
   void onInit() {
